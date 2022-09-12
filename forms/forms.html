@@ -4,8 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Forms</title>
+    <title>Forms Task</title>
   </head>
+  <style>
+    body {
+      font-size: 25px;
+    }
+  </style>
   <body style="margin: 20px">
     <div>
       <form>
@@ -39,10 +44,6 @@
     <br />
     <hr />
 
-    <!--
-         library 
-        supermarket loyalty card -->
-
     <div>
       <form>
         <label for="library">Choose your local library</label>
@@ -59,7 +60,36 @@
         <br />
         <input type="text" name="first-name" placeholder="Enter name" /><br />
         <input type="text" name="email" placeholder="Enter Email" />
+        <br />
         <input type="text" name="postcode" placeholder="Enter postcode" />
+      </form>
+    </div>
+    <hr />
+    <div>
+      <form>
+        <label for="loyaltyCard">Sign Up for Loyalty Card here:</label>
+        <br />
+        <label for="fullName">Full Name:</label><br />
+        <input
+          type="text"
+          name="fullName"
+          placeholder="Enter full name here"
+        /><br />
+        <label for="email">Email:</label><br />
+        <input type="email" placeholder="Enter email here" /><br />
+        <label for="password">Create password</label><br />
+        <input type="password" /><br />
+        <label for="postcode">Enter postcode</label><br />
+        <input type="text" name="postcode" placeholder="e.g. SE1 0BW" />
+        <br />
+        <label for="join"
+          >I agree to receive emails about the latests deals</label
+        >
+        <input type="checkbox" name="join" />
+        <br />
+        <br />
+        <label for="join">I do not want emails about latest deals</label>
+        <input type="checkbox" name="join" />
       </form>
     </div>
   </body>
