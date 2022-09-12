@@ -1,0 +1,26 @@
+html {
+  background-color: black;
+}
+body {
+  margin: 20px;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 35px;
+}
+#start {
+  font-size: 25px;
+}
+
+p {
+  color: white;
+}
+a {
+  color: white;
+  font-weight: bolder;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+  color: greenyellow;
+}
+
