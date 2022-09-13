@@ -7,13 +7,7 @@ body {
   font-family: "Courier New", Courier, monospace;
   font-size: 35px;
 }
-#start {
-  font-size: 25px;
-}
 
-p {
-  color: white;
-}
 a {
   color: white;
   font-weight: bolder;
@@ -106,14 +100,23 @@ input {
 #startGame {
   font-size: 50px;
   color: white;
-}
-button {
   margin-top: 20px;
   background: none;
   border: 2px white solid;
   border-radius: 15px;
 }
+
+#startGame:hover {
+  color: red;
+  border: 2px red solid;
+}
 #openDoor {
   height: 400px;
   width: 350px;
+}
+
+#playerCreation {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
