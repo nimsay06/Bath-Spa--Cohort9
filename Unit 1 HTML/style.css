@@ -1,8 +1,19 @@
 body {
   margin: 2em;
+  background-color: #fffafa;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 img {
   height: 10em;
   width: 10em;
+}
+
+a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #ffc0d0;
+}
+h1 {
+  text-decoration: underline;
 }
