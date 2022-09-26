@@ -22,3 +22,10 @@ function calculateBMI() {
   BMI = (weight / Math.pow(height / 100, 2)).toFixed(1);
   result.innerText = `Your BMI is ${BMI}`;
 }
+
+function dayTime() {
+  document.getElementById("skyImage").src = "sun.jpg";
+}
+function nightTime() {
+  document.getElementById("skyImage").src = "moon.jpg";
+}

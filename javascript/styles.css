@@ -5,7 +5,7 @@ body {
 }
 
 button {
-  background-color: rgba(61, 139, 95, 0.348);
+  background-color: rgb(0, 128, 255);
   padding: 10px;
   color: white;
   font: 12px;
@@ -13,7 +13,7 @@ button {
   border-radius: 30px;
 }
 button:hover {
-  background-color: rgb(61, 139, 95);
+  background-color: rgb(6, 79, 152);
 
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
@@ -32,4 +32,10 @@ button:hover {
 }
 td {
   border: 2px solid black;
+}
+
+#skyImage {
+  margin-top: 20px;
+  width: 350px;
+  height: 350px;
 }
