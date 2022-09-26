@@ -1,11 +1,24 @@
+var background = document.getElementById("bulbChange");
+
 function turnOn() {
+  background.style.background = "white";
+  background.style.color = "black";
   document.getElementById("lightbulb").src = "pic_bulbon.gif";
-  document.body.style.backgroundColor = "white";
-  document.body.style.color = "black";
 }
 
 function turnOff() {
+  background.style.background = "black";
+  background.style.color = "white";
   document.getElementById("lightbulb").src = "pic_bulboff.gif";
-  document.body.style.backgroundColor = "black";
-  document.body.style.color = "white";
+}
+
+var heightInput = document.getElementById("height");
+var weightInput = document.getElementById("weight");
+var result = document.getElementById("result");
+
+function calculateBMI() {
+  height = heightInput.value;
+  weight = weightInput.value;
+  BMI = (weight / Math.pow(height / 100, 2)).toFixed(1);
+  result.innerText = `Your BMI is ${BMI}`;
 }
