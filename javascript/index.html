@@ -12,12 +12,17 @@
   <body>
     <h1>Javascript Challenge</h1>
     <h3>Session 10</h3>
+
+    <!-- Section for light bulb image change  -->
     <div id="bulbChange">
       <h2>Press the buttons to switch on or off the bulb</h2>
       <button onClick="turnOn()">ON</button>
       <img src="./pic_bulboff.gif" id="lightbulb" />
       <button onClick="turnOff()">OFF</button>
     </div>
+
+    <!-- 
+     Simple BMI Calculator  -->
     <div class="calculatorBMI">
       <h2>Calculate BMI</h2>
       <p>Input height (in cm)</p>
@@ -27,6 +32,7 @@
       <button onclick="calculateBMI()">Calculate</button>
       <p id="result">BMI =</p>
 
+      <!-- Table to interpret BMI result -->
       <table class="bmiTable">
         <thead>
           <th>BMI</th>
@@ -51,12 +57,14 @@
       </table>
     </div>
 
+    <!-- Image change from moon to sun and vice versa -->
     <div>
       <button onClick="dayTime()">DAY</button>
-
       <img id="skyImage" src="./moon.jpg" />
       <button onClick="nightTime()">NIGHT</button>
     </div>
+
+    <!-- External js  -->
     <script src="./index.js"></script>
   </body>
 </html>
