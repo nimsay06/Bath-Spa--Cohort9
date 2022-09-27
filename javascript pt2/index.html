@@ -6,19 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Javascript pt 2</title>
   </head>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  </style>
   <body>
     <!-- Task 1 -->
     <div>
       <h1>Task 1</h1>
-      <input type="number" id="firstNumber" />
-      <button id="add" ">+</button>
-      <button id="subtract"">-</button>
-      <button id="multiply" ">x</button>
-      <button id="divide"">÷</button>
-      <input type="number" id="secondNumber" />
-      <button id="result" onClick="equalsTo()">=</button>
-      <p id="answer">Result: </p>
+      <input type="text" id="firstNumber" />
+      <select id="operator">
+        <option value="add">+</option>
+        <option value="subtract">-</option>
+        <option value="multiply">x</option>
+        <option value="divide">÷</option>
+      </select>
+      <input type="text" id="secondNumber" />
+      <button type="button" id="result" onClick="equalsTo()">=</button>
+      <p>Result: <span id="answer"></span></p>
     </div>
+    <script src="./index.js"></script>
   </body>
-  <script src="./index.js"></script>
 </html>

@@ -1,33 +1,17 @@
-const number1 = document.getElementById("firstNumber").value;
-const number2 = document.getElementById("secondNumber").value;
-const equalsButton = document.getElementById("result");
-const addition = document.getElementById("add");
-const subtract = document.getElementById("subtract");
-const multiply = document.getElementById("multiply");
-const divide = document.getElementById("divide");
-const resultDisplay = document.getElementById("answer");
-
-// function add() {
-//   resultDisplay.innerHTML = number1 + number2;
-// }
-// subtract();
-// multiply();
-// divide();
 function equalsTo() {
-  // take the operator input
-  const operator = addition || subtract || multiply || divide;
+  const x = parseInt(document.getElementById("firstNumber").value);
+  const y = parseInt(document.getElementById("secondNumber").value);
+  const operator = document.getElementById("operator").value;
+  var result;
 
-  // using if...else if... else
-  if (operator == addition) {
-    result = number1 + number2;
-  } else if (operator == subtract) {
-    result = number1 - number2;
-  } else if (operator == multiply) {
-    result = number1 * number2;
-  } else {
-    result = number1 / number2;
+  if (operator === "add") {
+    result = x + y;
+  } else if (operator === "subtract") {
+    result = x - y;
+  } else if (operator === "multiply") {
+    result = x * y;
+  } else if (operator === "divide" && y != 0) {
+    result = x / y;
   }
-
-  // display the result
-  console.log(`${number1} ${operator} ${number2} = ${result}`);
+  document.getElementById("answer").innerHTML = result;
 }
