@@ -1,3 +1,90 @@
 body {
   background-image: url(./images/background.png);
+  background-size: auto;
+  background-repeat: no-repeat;
+  font-family: "Poppins", sans-serif;
+}
+#logo {
+  margin: 30px;
+}
+.navBar {
+  font-size: 20px;
+  display: inline-block;
+  width: 800px;
+}
+.navBar a {
+  margin-left: 30px;
+}
+#mainImage {
+  background-image: url(./images/img.png);
+  background-size: cover;
+  display: inline;
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  width: 700px;
+  height: 700px;
+}
+#shoppingCart {
+  display: block;
+  position: fixed;
+  right: 0px;
+  top: 30px;
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+}
+.mainBody {
+  margin-top: 100px;
+  display: block;
+  margin-left: 300px;
+  font-weight: 200;
+  font-size: 25px;
+}
+#backArrow {
+  width: 50px;
+  height: 50px;
+}
+#nextArrow {
+  width: 50px;
+  height: 50px;
+}
+#collections {
+  font-size: 15px;
+  display: inline-block;
+  width: 200px;
+  height: 40px;
+  background: linear-gradient(
+    45deg,
+    rgba(12, 194, 255, 1) 0%,
+    rgba(255, 153, 255, 1) 72%
+  );
+  border-radius: 8px;
+  color: white;
+  padding-top: 10px;
+  text-align: center;
+}
+#semiBold {
+  font-weight: 600;
+}
+#arrows {
+  position: fixed;
+  display: inline-block;
+  margin-top: 100px;
+  margin-left: 400px;
+}
+#arrows a {
+  margin-right: 40px;
+}
+
+#links {
+  margin-left: 20px;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 40%;
+  bottom: 50%;
+}
+#links a {
+  padding: 10px;
 }

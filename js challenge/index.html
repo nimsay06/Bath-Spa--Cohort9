@@ -1,14 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600&display=swap"
+      rel="stylesheet"
+    />
     <title>Urban Fashion</title>
   </head>
   <body>
-    
+    <img id="logo" src="./images/logo.png" />
+
+    <!-- Navbar section -->
+    <div class="navBar">
+      <nav class="navbar navbar-expand navbar-light">
+        <div class="nav navbar-nav">
+          <a class="nav-item nav-link active" href="#" aria-current="page"
+            >Home <span class="visually-hidden">(current)</span></a
+          >
+          <a class="nav-item nav-link" href="#">About</a>
+          <a class="nav-item nav-link" href="#">Collections</a>
+          <a class="nav-item nav-link" href="#">Category</a>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Shopping cart image -->
+    <div>
+      <a href="#"><img id="shoppingCart" src="./images/cart.png" /></a>
+    </div>
+    <!-- Image -->
+    <div id="mainImage"></div>
+    <!-- Main content of page -->
+    <div class="mainBody">
+      <span id="collections">2022 Collections</span>
+      <br />
+      <span id="semiBold"
+        >You should always
+        <br />
+        feel pretty</span
+      >
+      <br />
+      Clothes that are sure to heat up your winter
+      <br />
+    </div>
+    <span id="arrows">
+      <a href="#"><img src="./images/back-arrow.png" id="backArrow" /></a>
+      <a href="#"><img src="./images/next-arrow.png" id="nextArrow" /></a>
+    </span>
+
+    <!-- Social Media Links -->
+    <div id="links">
+      <a href="#"><img src="./images/facebook.png" /></a>
+      <a href="#"><img src="./images/instagram.png" /></a>
+      <a href="#"><img src="./images/twitter.png" /></a>
+      <a href="#"><img src="./images/linkedin.png" /></a>
+    </div>
+
+    <!-- JS  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
     <script href="./index.js"></script>
   </body>
 </html>
