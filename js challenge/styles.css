@@ -73,8 +73,10 @@ body {
   margin-top: 100px;
   margin-left: 400px;
 }
-#arrows a {
+#arrows button {
   margin-right: 40px;
+  background: none;
+  border: none;
 }
 
 #links {
