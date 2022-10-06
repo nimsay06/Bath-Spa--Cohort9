@@ -1,0 +1,27 @@
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+button {
+  width: 5rem;
+  height: 2rem;
+  border-radius: 25px;
+  background-color: grey;
+  color: white;
+  font-weight: bold;
+}
+#custom-body.dark-mode {
+  background-color: #2b2d42;
+  color: #edf2f4;
+}
+
+.hero {
+  padding: 4rem 0;
+  display: flex;
+  justify-content: center;
+  background-color: antiquewhite;
+}
+#custom-body.dark-mode .hero {
+  background-color: #2b2d42;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+     <head>
+          <meta charset="utf-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <title>Challenge</title>
+          <meta name="description" content="">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <link rel="stylesheet" href="">
+     </head>
+     <body>
+          <h1>Challenge</h1>
+
+          <p id="output"></p>
+          <script> 
+          //Create two number variables
+          var a=15;
+          var b=20;
+          console.log(a+b);
+          //Add two numbers togtehr and multiply by 5
+          console.log((a+b)*5);
+          //Concatenate two strings together and output the result.
+          var string1="Diplodocus";
+          var string2 = "Stegosaurus"
+          console.log(string1 + " " + string2);
+          //Declare an empty variable called text add a new word using +=
+          var text= " ";
+          text+="T-rex";
+          text+="Compsognathus";
+          console.log(text);
+          //Create if statement comparing two numbers- alert if they match
+     //     var num1=2;
+     //     var num2=(10/5);
+     //      if (num1 == num2){
+     //           alert("Those numbers match!")
+     //      }
+
+
+          /// homework: more function stuff e.g. .map
+
+          const dinosaur = {
+               name: "Stegosaurus",
+               diet: "Herbivore",
+               weight: "1600kg",
+               era: "Jurassic"
+
+          };
+
+          function dinoFact(){
+               document.getElementById("output").innerHTML= `The ${dinosaur.name} lived during the ${dinosaur.era} era and was a ${dinosaur.diet}`
+          };
+          dinoFact();
+          </script>
+     </body>
+</html>
