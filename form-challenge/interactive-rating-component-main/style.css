@@ -1,10 +1,110 @@
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Overpass", sans-serif;
+  background-color: #131518;
+  color: white;
+}
+
+.container {
+  background: radial-gradient(
+    98.96% 98.96% at 50% 0%,
+    #232a34 0%,
+    #181e27 100%
+  );
+  padding: 1em;
+  max-width: 25em;
+  min-height: 20em;
+  border-radius: 10px;
+  margin: 20%;
+}
+#star {
+  padding: 15px;
+  border-radius: 50%;
+  background-color: hsl(213, 19%, 18%);
+
+  top: 10px;
+  left: 10px;
+}
+
+#paragraph {
+  color: hsl(216, 12%, 54%);
+  font-size: 15px;
+}
+
+.rate_form {
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.formLabel {
+  display: block;
+  text-align: center;
+  line-height: 5rem;
+  background-color: hsl(213, 19%, 18%);
+  width: 5em;
+  height: 5em;
+  transition: 15ms;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+.formLabel:active {
+  background-color: hsl(25, 97%, 53%);
+}
+
+#submitButton {
+  display: block;
+  letter-spacing: 5px;
+  font-weight: 700;
+  font-family: "Overpass", sans-serif;
+  width: 100%;
+  height: 30px;
+  border: none;
+  border-radius: 20px;
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+}
+
+/* // when form is submitted */
+
+#submittedRating {
+  background-color: #232a34;
+  color: hsl(25, 97%, 53%);
+  padding: 10px;
+  border-radius: 25px;
+}
+.submitted {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+#submittedP {
+  color: hsl(217, 12%, 63%);
+  font-size: 15px;
+}
+.remove {
+  display: none;
+}
+
+/* att */
 .attribution {
+  display: block;
+  position: absolute;
+  bottom: 10px;
   font-size: 11px;
   text-align: center;
 }
+
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
-
-body {
-  font-family: 'Overpass', sans-serif;}
