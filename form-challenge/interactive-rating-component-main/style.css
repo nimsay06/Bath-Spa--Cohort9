@@ -1,3 +1,6 @@
+
+
+
 body {
   display: flex;
   justify-content: center;
@@ -9,32 +12,29 @@ body {
 }
 
 .container {
-  background: radial-gradient(
-    98.96% 98.96% at 50% 0%,
-    #232a34 0%,
-    #181e27 100%
-  );
-  padding: 1em;
-  max-width: 25em;
+  background: radial-gradient(99% 99% at 50% 0%, #232a34 0%, #181e27 100%);
+  padding: 2em;
+  max-width: 20em;
   min-height: 20em;
-  border-radius: 10px;
+  border-radius: 30px;
   margin: 20%;
 }
 #star {
   padding: 15px;
   border-radius: 50%;
   background-color: hsl(213, 19%, 18%);
-
   top: 10px;
   left: 10px;
 }
-
+#main_title {
+  font-size: 25px;
+}
 #paragraph {
-  color: hsl(216, 12%, 54%);
+  color: hsl(217, 12%, 63%);
   font-size: 15px;
 }
 
-.rate_form {
+.ratings_section {
   border: none;
   display: flex;
   justify-content: space-between;
@@ -46,23 +46,23 @@ input[type="radio"] {
 }
 
 .formLabel {
-  display: block;
   text-align: center;
-  line-height: 5rem;
+  line-height: 3rem;
   background-color: hsl(213, 19%, 18%);
-  width: 5em;
-  height: 5em;
-  transition: 15ms;
+  width: 3em;
+  height: 3em;
+  transition: 10ms;
   border-radius: 50%;
-  margin: 5px;
 }
 
 .formLabel:active {
   background-color: hsl(25, 97%, 53%);
 }
+.selected {
+  background-color: hsl(216, 12%, 54%);
+}
 
 #submitButton {
-  display: block;
   letter-spacing: 5px;
   font-weight: 700;
   font-family: "Overpass", sans-serif;
@@ -74,15 +74,17 @@ input[type="radio"] {
   color: white;
 }
 
-/* // when form is submitted */
+/* // css for elements when form is submitted */
 
 #submittedRating {
   background-color: #232a34;
   color: hsl(25, 97%, 53%);
   padding: 10px;
   border-radius: 25px;
+  margin-top: 20px;
 }
 .submitted {
+  margin: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -96,7 +98,7 @@ input[type="radio"] {
   display: none;
 }
 
-/* att */
+/* footer of page */
 .attribution {
   display: block;
   position: absolute;

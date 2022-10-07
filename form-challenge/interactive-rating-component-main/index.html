@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
+    <!-- Google font import -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,12 +21,12 @@
     <title>Frontend Mentor | Interactive rating component</title>
   </head>
   <body>
-    <!-- Rating state start -->
     <div class="container">
+      <!-- Landing page of form website -->
       <div class="main">
-        <img id="star" src="./images/icon-star.svg" />
+        <img id="star" src="./images/icon-star.svg" alt="star icon" />
         <div class="message">
-          <h1>How did we do?</h1>
+          <h1 id="main_title">How did we do?</h1>
           <p id="paragraph">
             Please let us know how we did with your support request. All
             feedback is appreciated to help us improve our offering!
@@ -34,40 +34,43 @@
         </div>
       </div>
 
+      <!-- Rating numbers form including submit button -->
       <form class="rate_form">
-        <label class="formLabel" for="1">
-          <input type="radio" name="rating" id="1" value="1" />1
-        </label>
+        <div class="ratings_section">
+          <label class="formLabel" for="1">
+            <input type="radio" name="rating" id="1" value="1" />1
+          </label>
 
-        <label class="formLabel" for="2">
-          <input type="radio" name="rating" id="2" value="2" />2</label
-        >
+          <label class="formLabel" for="2">
+            <input type="radio" name="rating" id="2" value="2" />2</label
+          >
 
-        <label class="formLabel" for="3">
-          <input type="radio" name="rating" id="3" value="3" />3</label
-        >
+          <label class="formLabel" for="3">
+            <input type="radio" name="rating" id="3" value="3" />3</label
+          >
 
-        <label class="formLabel" for="4"
-          ><input type="radio" name="rating" id="4" value="4" />4</label
-        >
+          <label class="formLabel" for="4"
+            ><input type="radio" name="rating" id="4" value="4" />4</label
+          >
 
-        <label class="formLabel" for="5"
-          ><input type="radio" name="rating" id="5" value="5" />5</label
-        >
-        <br />
-        <input id="submitButton" type="submit" value="SUBMIT" />
+          <label class="formLabel" for="5"
+            ><input type="radio" name="rating" id="5" value="5" />5</label
+          >
+        </div>
+        <div class="submit_section">
+          <input id="submitButton" type="submit" value="SUBMIT" />
+        </div>
       </form>
-      <!-- Rating state end -->
 
-      <!-- Thank you state start -->
+      <!-- Content that will appear once rating is submitted -->
       <div class="submitted remove">
         <img
           id="submittedIllustration"
           src="./images/illustration-thank-you.svg"
+          alt="Thank you illustration"
         />
-
-        <h2 id="submittedHeader">Thank you</h2>
         <span id="submittedRating"></span>
+        <h2 id="submittedHeader">Thank you</h2>
         <p id="submittedP">
           We appreciate you taking the time to give a rating. If you ever need
           more support, don’t hesitate to get in touch!
@@ -75,12 +78,16 @@
       </div>
     </div>
 
+    <!-- Footer of page including github link -->
+
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Yasmin Tercenio</a>.
+      >. Coded by <a href="https://github.com/nimsay06">Yasmin Tercenio</a>.
     </div>
+
+    <!-- external javascript  -->
     <script src="./index.js"></script>
   </body>
 </html>
