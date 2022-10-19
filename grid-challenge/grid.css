@@ -104,3 +104,30 @@ img {
     justify-content: space-around;
   }
 }
+
+@media screen and (max-width: 680px) and (orientation: landscape) {
+  .grid-item {
+    height: min-content;
+    width: min-content;
+    line-height: 15px;
+    font-size: 15px;
+  }
+
+  .grid-item:hover {
+    box-shadow: -8px 6px 5px 1px #91769a;
+    transform: translateX(10px);
+  }
+  .grid-item img {
+    height: 150px;
+    width: 150px;
+  }
+
+  .container {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
